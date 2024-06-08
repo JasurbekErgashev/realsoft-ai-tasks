@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, ValidationError
 from typing_extensions import Annotated
 from pydantic.types import StringConstraints
-from constants import TRAINING_COLUMNS, CATEGORICAL_FEATURES
+from api.constants import TRAINING_COLUMNS, CATEGORICAL_FEATURES
 import uvicorn
 import joblib
 import pandas as pd
@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Loading the model
-model = joblib.load("final_model.pkl")
+model = joblib.load("training/final_model.pkl")
 
 
 # Preprocessing the input data
