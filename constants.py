@@ -1,0 +1,26 @@
+TRAINING_COLUMNS = [
+    "gender_female",
+    "gender_male",
+    "race_ethnicity_group A",
+    "race_ethnicity_group B",
+    "race_ethnicity_group C",
+    "race_ethnicity_group D",
+    "race_ethnicity_group E",
+    "parental_level_of_education_associate's degree",
+    "parental_level_of_education_bachelor's degree",
+    "parental_level_of_education_high school",
+    "parental_level_of_education_master's degree",
+    "parental_level_of_education_some college",
+    "parental_level_of_education_some high school",
+    "lunch_free/reduced",
+    "lunch_standard",
+    "test_preparation_course_completed",
+    "test_preparation_course_none",
+]
+CATEGORICAL_FEATURES = [
+    "gender",
+    "race_ethnicity",
+    "parental_level_of_education",
+    "lunch",
+    "test_preparation_course",
+]
