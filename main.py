@@ -19,7 +19,7 @@ model = joblib.load("final_model.pkl")
 
 # Preprocessing the input data
 def preprocess_data(input_data):
-    data_dict = input_data.dict()
+    data_dict = input_data.model_dump()
     data_df = pd.DataFrame([data_dict])
 
     data_df = pd.get_dummies(data_df, columns=CATEGORICAL_FEATURES, dtype=int)
