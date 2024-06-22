@@ -50,7 +50,7 @@ The model used is a `GradientBoostingClassifier`, integrated into a pipeline tha
 
 #### Loading the Model
 
-```
+```python
 from joblib import load
 clf = load('trained_pipeline.pkl')
 ```
@@ -59,7 +59,7 @@ clf = load('trained_pipeline.pkl')
 
 Ensure the input data matches the format used during training, including column names and preprocessing steps. Here is an example of how to prepare and standardize the input data:
 
-```
+```python
 import pandas as pd
 
 data = {
@@ -81,7 +81,7 @@ input_df = pd.DataFrame(data)
 
 Use the loaded pipeline to make predictions on new data:
 
-```
+```python
 predictions = clf.predict(input_df)
 print("Predictions:", predictions)
 ```
