@@ -184,3 +184,8 @@ y_pred = clf.predict(X_test)
 print(f'Pipeline Model Accuracy: {accuracy_score(y_test, y_pred)}')
 print(confusion_matrix(y_test, y_pred))
 print(classification_report(y_test, y_pred))
+
+from joblib import dump, load
+
+# Save the trained pipeline to a file
+dump(clf, 'trained_pipeline.pkl')
