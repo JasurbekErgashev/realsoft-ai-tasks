@@ -1,5 +1,19 @@
 # Machine Learning Model Pipeline Documentation
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Dataset Information](#dataset-information)
+- [Preprocessing Steps](#preprocessing-steps)
+- [Preprocessing Pipelines](#preprocessing-pipelines)
+- [Model Training and Pipeline](#model-training-and-pipeline)
+- [How to Use the Trained Model](#how-to-use-the-trained-model)
+  - [Prerequisites](#prerequisites)
+  - [Loading the Model](#loading-the-model)
+  - [Preparing Input Data](#preparing-input-data)
+  - [Making Predictions](#making-predictions)
+- [Conclusion](#conclusion)
+
 ## Overview
 
 This documentation provides a comprehensive guide on how to use the trained machine learning model pipeline, including details on loading the model from a `.pkl` file, preparing the input data, and making predictions.
